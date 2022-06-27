@@ -1,0 +1,42 @@
+
+#game{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+
+}
+
+.grid-cell{
+    border:1px solid darkseagreen;
+    width:100px;
+    height:100px;
+    cursor:pointer;
+    display: flex;
+    font-size:40px;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: #141514;
+}
+
+.x::after{
+    content: 'X';
+    color:#44D62C;
+}
+.o::after{
+    content: 'O';
+    color:#FFAD00;
+}
+.restartBtn{
+    position: absolute;
+    bottom: 250px;
+    left: 930px;
+    right: auto;
+    border-radius: 3px;
+    background-color: rgb(1, 1, 1);
+    color:#00ff0a;
+    
+}
